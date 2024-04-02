@@ -1,0 +1,19 @@
+/* Descendant combinator (space) - styles all <p> inside .parent */
+.parent p {
+    font-size: 20px;
+}
+
+/* Child combinator (>) - styles <p> that are direct children of .child */
+.parent > .child > p {
+    color: blue;
+}
+
+/* Adjacent Sibling combinator (+) - styles the first <p> that directly follows another <p> */
+.parent p + p {
+    color: green;
+}
+
+/* General Sibling combinator (~) - styles all <p> that follow another <p> */
+.parent p ~ p {
+    border: 1px solid red;
+}
